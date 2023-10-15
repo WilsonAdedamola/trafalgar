@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { BiMenuAltRight } from "react-icons/bi";
 import { GrFormClose } from "react-icons/gr";
 import logo from "../assets/logo.png";
 import "./navbar.css";
@@ -37,7 +37,7 @@ const MobileNavbar = () => {
         </div>
         <div>
           {!show ? (
-            <HiOutlineMenuAlt2 className="size" onClick={() => setShow(true)} />
+            <BiMenuAltRight className="size" onClick={() => setShow(true)} />
           ) : (
             <GrFormClose className="size" onClick={() => setShow(false)} />
           )}
