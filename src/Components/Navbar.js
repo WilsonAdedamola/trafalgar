@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { GrFormClose } from "react-icons/gr";
 import menu from '../assets/menu.svg'
+import close from '../assets/close.svg'
 import logo from "../assets/logo.png";
 import "./navbar.css";
 
@@ -39,7 +39,7 @@ const MobileNavbar = () => {
           {!show ? (
             <img src={menu} alt=""  className="" onClick={() => setShow(true)}/>
           ) : (
-            <GrFormClose className="size" onClick={() => setShow(false)} />
+            <img src={close} alt=""  className="" onClick={() => setShow(false)}/>
           )}
         </div>
       </div>
